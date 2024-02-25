@@ -78,17 +78,25 @@ body {
     
 }
 
+.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
 .navbar-brand { /*seccion de logo*/
     margin-right: auto;
-    margin-top: 0%;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .logo-image { /*logo*/
-    width: 85px; 
+    width: 80px;
+    height: 75px; 
 }
 
 .nav-link { /*nav*/
     font-family: 'Josefin Sans', sans-serif;
+    padding-left: 20px !important;
 }
 
 
