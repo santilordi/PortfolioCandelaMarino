@@ -1,342 +1,338 @@
+@charset "UTF-8";
+/*Mixins*/
+/*Variables*/
 /*MOBILE*/
-@media only screen and (max-width: 400px) { 
-    /*INDEX*/
-
-    .intro-container-center .h1-center-PressStart {
-        width: 100%; 
-        overflow: hidden !important; 
-        font-size: 30px !important; 
-        margin-top: 30px !important;
-    }
-
-    .intro-container-center .h2-center-JosefinSans {
-        font-size: 40px !important;
-    }
-
-    /*TRAYECTORIA*/
-    .title-container h1 {
-        font-size: 25px !important;
-    }
-
-    .title-container h3 {
-        font-size: 17px !important;
-    }
+@media only screen and (max-width: 400px) {
+  /*INDEX*/
+  .intro-container-center .h1-center-PressStart {
+    width: 100%;
+    overflow: hidden !important;
+    font-size: 30px !important;
+    margin-top: 30px !important;
+  }
+  .intro-container-center .h2-center-JosefinSans {
+    font-size: 40px !important;
+  }
+  /*TRAYECTORIA*/
+  .title-container h1 {
+    font-size: 25px !important;
+  }
+  .title-container h3 {
+    font-size: 17px !important;
+  }
+  /*SOBRE MI*/
+  .info-container {
+    width: 100% !important;
+  }
+  .avatar-container {
+    width: 100% !important;
+  }
+  .carta-trabajos {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
 }
-
 /*TABLET*/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-    /*INDEX*/
-    .intro-container-center .h1-center-PressStart {
-        width: 100%; 
-        overflow: hidden !important; 
-        font-size: 30px !important; 
-        margin-top: 30px !important;
-    }
-
-    .intro-container-center .h2-center-JosefinSans {
-        font-size: 40px !important;
-    }
-
-    .summary-text p {
-        font-size: 20px !important;
-    }
-
-    .destacado-pressStart {
-        font-size: 10px !important;
-    }
-
-    .btn-custom {
-        padding: 12px !important;
-        font-size: 8px !important;
-        
-    
-    }
-    
-    /*TRAYECTORIA*/
-    .title-container h1 {
-        font-size: 35px !important;
-    }
-
-    .title-container h3 {
-        font-size: 22px !important;
-    }
+  /*INDEX*/
+  .intro-container-center .h1-center-PressStart {
+    width: 100%;
+    overflow: hidden !important;
+    font-size: 30px !important;
+    margin-top: 30px !important;
+  }
+  .intro-container-center .h2-center-JosefinSans {
+    font-size: 40px !important;
+  }
+  .summary-text p {
+    font-size: 20px !important;
+  }
+  .destacado-pressStart {
+    font-size: 10px !important;
+  }
+  .btn-custom {
+    padding: 12px !important;
+    font-size: 8px !important;
+  }
+  /*TRAYECTORIA*/
+  .title-container h1 {
+    font-size: 35px !important;
+  }
+  .title-container h3 {
+    font-size: 22px !important;
+  }
+  /*SOBRE MI*/
+  .info-container {
+    width: 100% !important;
+  }
+  .avatar-container {
+    width: 100% !important;
+  }
+  .carta-trabajos {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
 }
-
-
-
 /*Index*/
 /* BODY */
-body { 
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
- /*HEADER*/
+/*HEADER*/
 .navbar { /*zona de nevegacion*/
-    height: 85px;
-    
+  height: 85px;
 }
 
 .container-fluid {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 .navbar-brand { /*seccion de logo*/
-    margin-right: auto;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+  margin-right: auto;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
-
-.logo-image { /*logo*/
-    width: 80px;
-    height: 75px; 
+.navbar-brand .logo-image { /*logo*/
+  width: 80px;
+  height: 75px;
+  transition: 1s;
+}
+.navbar-brand .logo-image:hover {
+  transform: scale(1.1);
 }
 
 .nav-link { /*nav*/
-    font-family: 'Josefin Sans', sans-serif;
-    padding-left: 20px !important;
+  font-family: "Josefin Sans", sans-serif;
+  padding-left: 20px !important;
 }
-
-
 
 /*MAIN*/
-
 .intro-container-center { /*seccion titulo de index*/
-    margin-top: 150px;
+  margin-top: 150px;
 }
-
-.h2-center-JosefinSans { /*titulo de index*/
-    font-size: 50px;
-    color: #8929c4;
-    font-family: 'Josefin Sans', sans-serif;
+.intro-container-center .h2-center-JosefinSans { /*titulo de index*/
+  font-size: 50px;
+  color: #8929c4;
+  font-family: "Josefin Sans", sans-serif;
 }
-
-.h1-center-PressStart { /*titulo de index*/
-    color: #8929c4;
-    font-size: 60px;
-    font-family:  'Press Start 2P', system-ui;
+.intro-container-center .h1-center-PressStart { /*titulo de index*/
+  color: #8929c4;
+  font-size: 60px;
+  font-family: "Press Start 2P", system-ui;
 }
 
 .summary-img { /*imagen de index*/
-    height: auto;
-    width: 400px;
+  width: 400px;
+  height: auto;
 }
 
 .summary-text p { /*texto de presentacion index*/
-    font-family: 'Josefin Sans', sans-serif;
-    color: #8929c4;
-    font-size: 25px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #8929c4;
+  font-size: 25px;
 }
 
 .summary-text .destacado-pressStart { /*palabras destacadas presntacion*/
-    color: red;
-    font-family:  'Press Start 2P', system-ui;
-    font-size: 15px;
+  color: red;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 15px;
 }
 
 .btn-custom { /*boton de contacto*/
-    background-color:#8929c4; 
-    color: white; 
-    text-decoration: none;
-    font-family:  'Press Start 2P', system-ui;
-    padding: 15px;
-    border-radius: 8%;
-    font-size: 12px;
-    
-
+  background-color: #8929c4;
+  color: white;
+  text-decoration: none;
+  font-family: "Press Start 2P", system-ui;
+  padding: 15px;
+  border-radius: 8%;
+  font-size: 12px;
+  transition: 1s;
 }
 
 .btn-custom:hover { /*cambio de color de boton*/
-    background-color: rgb(18, 208, 18); 
+  background-color: red;
+  transform: scale(1.1);
 }
 
 /*FOOTER*/
-
 .footer { /*pide de pagina*/
-    margin-top: 50px;
-    position: relative;
-    bottom: 0;
-    margin-bottom: 0;
+  margin-top: 50px;
+  position: relative;
+  bottom: 0;
+  margin-bottom: 0;
 }
-
-.social-icon{ /*icono de instagram*/
-    width: 50px;
-    height: 50px;
-    margin-top: 15px;
+.footer .social-icon { /*icono de instagram*/
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
 }
-
-.social-id{ /*id de cuenta*/
-    color: #fff;
-    font-family:'Josefin Sans', sans-serif ;
-    font-size: 17px;
+.footer .social-id { /*id de cuenta*/
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 17px;
 }
-
-.copyright {
-    color: #fff;
-    font-family:'Josefin Sans', sans-serif ;
-    font-size: 10px;
+.footer .copyright {
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 10px;
 }
-
 
 /*Todas las paginas*/
-.title-container{ /*Contenedor titulo de todas las paginas*/
-
-    
-    color: #8929c4;
-    margin-top: 145px;
-    padding-bottom: 30px;
+.title-container { /*Contenedor titulo de todas las paginas*/
+  color: #8929c4;
+  margin-top: 145px;
+  padding-bottom: 30px;
 }
-
 .title-container h1 { /*Titulo de todas la paginas*/
-    font-size: 45px;
-    font-family: 'Press Start 2P', system-ui;
+  font-size: 45px;
+  font-family: "Press Start 2P", system-ui;
 }
-
 .title-container h3 { /*titulod e todas las paginas*/
-    font-size: 25px;
-    font-family:'Josefin Sans', sans-serif ;
+  font-size: 25px;
+  font-family: "Josefin Sans", sans-serif;
 }
-
 .title-container p { /*parrafo de seccion de titulo*/
-    font-size: 25px;
-    font-family:'Josefin Sans', sans-serif ; 
-
+  font-size: 25px;
+  font-family: "Josefin Sans", sans-serif;
 }
-
 
 /*GALERIA*/
 /*MAIN*/
-
 .tz-gallery .image-gallery { /*seccion de imagenes de galeria*/
-    padding: 8px 2px;
+  padding: 8px 2px;
 }
-
-.tz-gallery img{ /*imagenes de galeria*/
-    width: 300px;
-    height: 300px;
-
+.tz-gallery .image-gallery img { /*imagenes de galeria*/
+  width: 300px;
+  height: 300px;
+  transition: 1s;
+}
+.tz-gallery .image-gallery img:hover {
+  transform: scale(1.1);
 }
 
 /*TRAYECTORIA*/
 /*MAIN*/
-
 .card { /*cartas*/
-    width: 300px;
-    margin: 0 auto;
+  width: 300px;
+  margin: 0 auto;
+}
+.card a { /*enlace de cartas*/
+  text-decoration: none;
+}
+.card .card-img-top { /*img de cartas*/
+  height: 200px;
+}
+.card .card-body h4 { /*titulo de cartas*/
+  font-size: 20px;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+}
+.card .card-body p { /*parrafo de cartas*/
+  font-size: 15px;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
 }
 
-.card a{ /*enlace de cartas*/
-    text-decoration: none;
+.card-trayectoria {
+  transition: 1s;
 }
 
-.card-img-top{ /*img de cartas*/
-    height: 200px;
+.card-trayectoria:hover {
+  transform: scale(1.1);
 }
-
-.card-body h4{ /*titulo de cartas*/
-    font-size: 20px;
-    width: 100%;
-    font-family:'Josefin Sans', sans-serif ;
-    color: #fff;
-}
-
-.card-body p{ /*parrafo de cartas*/
-    font-size: 15px;
-    width: 100%;
-    font-family:'Josefin Sans', sans-serif ;
-    color: #fff;
-}
-
-
-
 
 /*SOBRE MI*/
 /*MAIN*/
-
-.info-avatar-container{ /*Sección de información personal y avatar*/
-    margin-top: 80px;
-    margin-bottom: 80px;
+.info-avatar-container { /*Sección de información personal y avatar*/
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
-
-.info-container { /*Contenedor de informacion*/
-    width: 55%;
-    margin-bottom: 50px;
-    margin-top: 50px;
+.info-avatar-container .info-container { /*Contenedor de informacion*/
+  width: 55%;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
-
-.avatar-container { /*Contenedor de avatar*/
-    width: 45%;
+.info-avatar-container .info-container .card-body-info { /*seccion de info de cartas*/
+  padding-top: 90px;
 }
-
-.avatar-container img { /*Avatar*/
-    max-width: 300px; 
-    height: auto; 
-    margin-bottom: 20px;
-    border-radius: 50%;
+.info-avatar-container .info-container .card-body-info h2 { /*titulo de info de cartas*/
+  padding-bottom: 40px;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 25px;
 }
-
-.card-body-info{ /*seccion de info de cartas*/
-    padding-top: 90px;
+.info-avatar-container .info-container .card-body-info p { /*parrado de info de cartas*/
+  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
 }
-
-.card-body-info h2 { /*titulo de info de cartas*/
-    padding-bottom: 40px;
-    font-family: 'Press Start 2P', system-ui;
-    font-size: 25px;
+.info-avatar-container .avatar-container { /*Contenedor de avatar*/
+  width: 45%;
 }
-
-.card-body-info p{ /*parrado de info de cartas*/
-    font-size: 15px;
-    font-family:'Josefin Sans', sans-serif ;
+.info-avatar-container .avatar-container img { /*Avatar*/
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
 }
 
 .trabajos-title-contenedor { /*seccion titulo de trabajos*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .trabajos-title-contenedor h2 { /*titulo de trabajos*/
-    font-family: 'Press Start 2P', system-ui;
-    font-size: 40px;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 40px;
 }
 
+.carta-trabajos {
+  transition: 1s;
+}
 .carta-trabajos h5 { /*titulod e cartas trabajos*/
-    font-size: 15px;
-    font-family: 'Press Start 2P', system-ui;
+  font-size: 15px;
+  font-family: "Press Start 2P", system-ui;
 }
-
 .carta-trabajos p { /*parrafo de cartas trabajos*/
-    font-size: 12px;
-    font-family:'Josefin Sans', sans-serif ;
+  font-size: 12px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
+.carta-trabajos:hover {
+  transform: scale(1.1);
+}
 
 /*CONTACTO*/
 /*MAIN*/
-
 form { /*formulario de contacto*/
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 100px;
-    margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 100px;
+  margin-top: 50px;
 }
-
 form .mb-3 { /*celdas de formulario*/
-    font-family:'Josefin Sans', sans-serif ;
+  font-family: "Josefin Sans", sans-serif;
+}
+form .col-12 {
+  display: flex;
+  justify-content: center;
+  font-family: "Press Start 2P", system-ui;
+}
+form .col-12 button { /*boton de enviar*/
+  font-size: 10px;
+  background-color: #8929c4;
+  border-color: #8929c4;
+  padding: 10px;
+  transition: 1s;
+}
+form .col-12 button:hover {
+  background-color: red;
+  border-color: red;
+  transform: scale(1.1);
 }
 
-.col-12 {
-    display: flex;
-    justify-content: center;
-    font-family: 'Press Start 2P', system-ui;
-}
-
-.col-12 button{ /*boton de enviar*/
-    font-size: 10px;
-    background-color: #8929c4;
-    border-color: #8929c4;
-    padding: 10px;
-}
+/*# sourceMappingURL=style.css.map */

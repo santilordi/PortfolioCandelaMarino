@@ -1,0 +1,405 @@
+/*Mixins*/
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+/*Variables*/
+$font-josefin: "Josefin Sans", sans-serif;
+$font-pressStart: 'Press Start 2P', system-ui;
+$color-primary: #8929c4;
+
+
+
+/*Index*/
+/* BODY */
+body { 
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+ /*HEADER*/
+.navbar { /*zona de nevegacion*/
+    height: 85px;
+    
+}
+
+.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.navbar-brand { /*seccion de logo*/
+    margin-right: auto;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    
+    .logo-image { /*logo*/
+        @include sizes(80px, 75px);
+        transition: 1s
+    }
+
+    .logo-image:hover {
+        transform: scale(1.1);
+    }
+}
+
+.nav-link { /*nav*/
+    font-family: $font-josefin;
+    padding-left: 20px !important;
+}
+
+/*MAIN*/
+
+.intro-container-center { /*seccion titulo de index*/
+    margin-top: 150px;
+
+    .h2-center-JosefinSans { /*titulo de index*/
+        font-size: 50px;
+        color: $color-primary;
+        font-family: $font-josefin;
+    }
+    
+    .h1-center-PressStart { /*titulo de index*/
+        color: $color-primary;
+        font-size: 60px;
+        font-family:  $font-pressStart;
+    }
+}
+
+.summary-img { /*imagen de index*/
+    @include sizes(400px, auto );  
+}
+
+.summary-text p { /*texto de presentacion index*/
+    font-family: $font-josefin;
+    color: $color-primary;
+    font-size: 25px;
+}
+
+.summary-text .destacado-pressStart { /*palabras destacadas presntacion*/
+    color: red;
+    font-family:  $font-pressStart;
+    font-size: 15px;
+}
+
+.btn-custom { /*boton de contacto*/
+    background-color:$color-primary; 
+    color: white; 
+    text-decoration: none;
+    font-family:  $font-pressStart;
+    padding: 15px;
+    border-radius: 8%;
+    font-size: 12px;
+    transition: 1s;
+    
+
+}
+
+.btn-custom:hover { /*cambio de color de boton*/
+    background-color: red;
+    transform: scale(1.1);
+}
+
+/*FOOTER*/
+
+.footer { /*pide de pagina*/
+    margin-top: 50px;
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0;
+
+    .social-icon{ /*icono de instagram*/
+        @include sizes(50px, 50px );
+        margin-top: 15px;
+    }
+
+    .social-id{ /*id de cuenta*/
+        color: #fff;
+        font-family: $font-josefin ;
+        font-size: 17px;
+    }
+
+    .copyright {
+        color: #fff;
+        font-family: $font-josefin ;
+        font-size: 10px;
+    }
+}
+
+/*Todas las paginas*/
+.title-container{ /*Contenedor titulo de todas las paginas*/
+    color: $color-primary;
+    margin-top: 145px;
+    padding-bottom: 30px;
+
+    h1 { /*Titulo de todas la paginas*/
+        font-size: 45px;
+        font-family: $font-pressStart;
+    }
+
+    h3 { /*titulod e todas las paginas*/
+        font-size: 25px;
+        font-family: $font-josefin;
+    }
+
+    p { /*parrafo de seccion de titulo*/
+        font-size: 25px;
+        font-family: $font-josefin ; 
+    
+    }
+}
+
+/*GALERIA*/
+/*MAIN*/
+
+.tz-gallery .image-gallery { /*seccion de imagenes de galeria*/
+    padding: 8px 2px;
+
+    img{ /*imagenes de galeria*/
+        @include sizes(300px, 300px);
+        transition: 1s;
+    
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+
+/*TRAYECTORIA*/
+/*MAIN*/
+
+.card { /*cartas*/
+    width: 300px;
+    margin: 0 auto;
+
+    a{ /*enlace de cartas*/
+        text-decoration: none;
+    }
+
+    .card-img-top{ /*img de cartas*/
+        height: 200px;
+    }
+
+    .card-body {
+        h4 { /*titulo de cartas*/
+            font-size: 20px;
+            width: 100%;
+            font-family: $font-josefin ;
+            color: #fff;
+        }
+        
+        p{ /*parrafo de cartas*/
+            font-size: 15px;
+            width: 100%;
+            font-family: $font-josefin;
+            color: #fff;
+        }
+    }
+}
+
+.card-trayectoria {
+    transition: 1s;
+}
+
+.card-trayectoria:hover {
+    transform: scale(1.1);
+}
+
+/*SOBRE MI*/
+/*MAIN*/
+
+.info-avatar-container{ /*Sección de información personal y avatar*/
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    .info-container { /*Contenedor de informacion*/
+        width: 55%;
+        margin-bottom: 50px;
+        margin-top: 50px;
+
+        .card-body-info{ /*seccion de info de cartas*/
+            padding-top: 90px;
+
+            h2 { /*titulo de info de cartas*/
+                padding-bottom: 40px;
+                font-family: $font-pressStart;
+                font-size: 25px;
+            }
+
+            p { /*parrado de info de cartas*/
+                font-size: 15px;
+                font-family: $font-josefin ;
+            }
+            
+        }
+    }
+
+    .avatar-container { /*Contenedor de avatar*/
+        width: 45%;
+
+        img { /*Avatar*/
+            max-width: 300px; 
+            height: auto; 
+            margin-bottom: 20px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.trabajos-title-contenedor { /*seccion titulo de trabajos*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 { /*titulo de trabajos*/
+        font-family: $font-pressStart;
+        font-size: 40px;
+    }
+}
+
+.carta-trabajos {
+    transition: 1s;
+
+    h5 { /*titulod e cartas trabajos*/
+        font-size: 15px;
+        font-family: $font-pressStart;
+    }
+
+    p { /*parrafo de cartas trabajos*/
+        font-size: 12px;
+        font-family: $font-josefin;
+    }
+}
+
+.carta-trabajos:hover {
+    transform: scale(1.1);
+}
+
+/*CONTACTO*/
+/*MAIN*/
+
+form { /*formulario de contacto*/
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+
+    .mb-3 { /*celdas de formulario*/
+        font-family: $font-josefin ;
+    }
+
+    .col-12 {
+        display: flex;
+        justify-content: center;
+        font-family: $font-pressStart;
+
+        button{ /*boton de enviar*/
+            font-size: 10px;
+            background-color: $color-primary;
+            border-color: $color-primary;
+            padding: 10px;
+            transition: 1s;
+        }
+
+        button:hover {
+            background-color: red;
+            border-color: red;
+            transform: scale(1.1);
+        }
+    }
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 400px) { 
+    /*INDEX*/
+
+    .intro-container-center .h1-center-PressStart {
+        width: 100%; 
+        overflow: hidden !important; 
+        font-size: 30px !important; 
+        margin-top: 30px !important;
+    }
+
+    .intro-container-center .h2-center-JosefinSans {
+        font-size: 40px !important;
+    }
+
+    /*TRAYECTORIA*/
+    .title-container h1 {
+        font-size: 25px !important;
+    }
+
+    .title-container h3 {
+        font-size: 17px !important;
+    }
+
+    /*SOBRE MI*/
+    .info-container {
+        width: 100% !important;
+    }
+
+    .avatar-container {
+        width: 100% !important;
+    }
+
+    .carta-trabajos {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+    }
+}
+
+/*TABLET*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    /*INDEX*/
+    .intro-container-center .h1-center-PressStart {
+        width: 100%; 
+        overflow: hidden !important; 
+        font-size: 30px !important; 
+        margin-top: 30px !important;
+    }
+
+    .intro-container-center .h2-center-JosefinSans {
+        font-size: 40px !important;
+    }
+
+    .summary-text p {
+        font-size: 20px !important;
+    }
+
+    .destacado-pressStart {
+        font-size: 10px !important;
+    }
+
+    .btn-custom {
+        padding: 12px !important;
+        font-size: 8px !important;
+        
+    
+    }
+    
+    /*TRAYECTORIA*/
+    .title-container h1 {
+        font-size: 35px !important;
+    }
+
+    .title-container h3 {
+        font-size: 22px !important;
+    }
+
+    /*SOBRE MI*/
+    .info-container {
+        width: 100% !important;
+    }
+
+    .avatar-container {
+        width: 100% !important;
+    }
+
+    .carta-trabajos {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+    }
+}
