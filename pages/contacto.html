@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Candela Marino | Contacto</title>
 </head>
 
@@ -29,7 +31,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse bg-dark " id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto ">
+                <ul class="navbar-nav mr-auto " data-aos="fade-right">
                     <li class="nav-item active">
                         <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
                     </li>
@@ -53,7 +55,7 @@
     <!-- Contenido principal (main) -->
     <main id="container-fluid">
         <!--Titulo-->
-        <section class="title-container text-center">
+        <section class="title-container text-center" data-aos="fade-up">
             <h1>Contacto</h1>
             <p>¡Contactame para hablar sobre tu proyecto!</p>
         </section>
@@ -108,6 +110,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-
 </html>
