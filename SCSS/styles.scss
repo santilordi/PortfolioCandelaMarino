@@ -1,14 +1,5 @@
-/*Mixins*/
-@mixin sizes ($width, $height) {
-    width: $width;
-    height: $height;
-}
-
-/*Variables*/
-$font-josefin: "Josefin Sans", sans-serif;
-$font-pressStart: 'Press Start 2P', system-ui;
-$color-primary: #8929c4;
-
+@import 'variables';
+@import 'mixins';
 
 
 /*Index*/
@@ -313,7 +304,7 @@ form { /*formulario de contacto*/
 }
 
 /*MOBILE*/
-@media only screen and (max-width: 400px) { 
+@media only screen and (max-width: 400px) {
     /*INDEX*/
 
     .intro-container-center .h1-center-PressStart {

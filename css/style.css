@@ -1,78 +1,6 @@
 @charset "UTF-8";
-/*Mixins*/
 /*Variables*/
-/*MOBILE*/
-@media only screen and (max-width: 400px) {
-  /*INDEX*/
-  .intro-container-center .h1-center-PressStart {
-    width: 100%;
-    overflow: hidden !important;
-    font-size: 30px !important;
-    margin-top: 30px !important;
-  }
-  .intro-container-center .h2-center-JosefinSans {
-    font-size: 40px !important;
-  }
-  /*TRAYECTORIA*/
-  .title-container h1 {
-    font-size: 25px !important;
-  }
-  .title-container h3 {
-    font-size: 17px !important;
-  }
-  /*SOBRE MI*/
-  .info-container {
-    width: 100% !important;
-  }
-  .avatar-container {
-    width: 100% !important;
-  }
-  .carta-trabajos {
-    margin-top: 30px !important;
-    margin-bottom: 30px !important;
-  }
-}
-/*TABLET*/
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  /*INDEX*/
-  .intro-container-center .h1-center-PressStart {
-    width: 100%;
-    overflow: hidden !important;
-    font-size: 30px !important;
-    margin-top: 30px !important;
-  }
-  .intro-container-center .h2-center-JosefinSans {
-    font-size: 40px !important;
-  }
-  .summary-text p {
-    font-size: 20px !important;
-  }
-  .destacado-pressStart {
-    font-size: 10px !important;
-  }
-  .btn-custom {
-    padding: 12px !important;
-    font-size: 8px !important;
-  }
-  /*TRAYECTORIA*/
-  .title-container h1 {
-    font-size: 35px !important;
-  }
-  .title-container h3 {
-    font-size: 22px !important;
-  }
-  /*SOBRE MI*/
-  .info-container {
-    width: 100% !important;
-  }
-  .avatar-container {
-    width: 100% !important;
-  }
-  .carta-trabajos {
-    margin-top: 30px !important;
-    margin-bottom: 30px !important;
-  }
-}
+/*Mixins*/
 /*Index*/
 /* BODY */
 body {
@@ -333,6 +261,79 @@ form .col-12 button:hover {
   background-color: red;
   border-color: red;
   transform: scale(1.1);
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 400px) {
+  /*INDEX*/
+  .intro-container-center .h1-center-PressStart {
+    width: 100%;
+    overflow: hidden !important;
+    font-size: 30px !important;
+    margin-top: 30px !important;
+  }
+  .intro-container-center .h2-center-JosefinSans {
+    font-size: 40px !important;
+  }
+  /*TRAYECTORIA*/
+  .title-container h1 {
+    font-size: 25px !important;
+  }
+  .title-container h3 {
+    font-size: 17px !important;
+  }
+  /*SOBRE MI*/
+  .info-container {
+    width: 100% !important;
+  }
+  .avatar-container {
+    width: 100% !important;
+  }
+  .carta-trabajos {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+}
+/*TABLET*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  /*INDEX*/
+  .intro-container-center .h1-center-PressStart {
+    width: 100%;
+    overflow: hidden !important;
+    font-size: 30px !important;
+    margin-top: 30px !important;
+  }
+  .intro-container-center .h2-center-JosefinSans {
+    font-size: 40px !important;
+  }
+  .summary-text p {
+    font-size: 20px !important;
+  }
+  .destacado-pressStart {
+    font-size: 10px !important;
+  }
+  .btn-custom {
+    padding: 12px !important;
+    font-size: 8px !important;
+  }
+  /*TRAYECTORIA*/
+  .title-container h1 {
+    font-size: 35px !important;
+  }
+  .title-container h3 {
+    font-size: 22px !important;
+  }
+  /*SOBRE MI*/
+  .info-container {
+    width: 100% !important;
+  }
+  .avatar-container {
+    width: 100% !important;
+  }
+  .carta-trabajos {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
